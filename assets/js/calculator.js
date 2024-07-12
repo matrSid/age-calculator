@@ -14,27 +14,27 @@ function calculate() {
 	const hours = minutes / 60;
 	const days = Math.trunc(hours / 24);
 
-	results.unshift(plural(seconds, 'seconds:second:seconds:seconds:seconds:seconds'));
-	results.unshift(plural(minutes, 'minutes:minute:minutes:minutes:minutes:minutes'));
-	results.unshift(plural(hours, 'hours:hour:hours:hours:hours:hours'));
-	results.unshift(plural(days, 'days:day:days:days:days:days'));
+	//results.unshift(plural(seconds, 'seconds:second:seconds:seconds:seconds:seconds'));
+	//results.unshift(plural(minutes, 'minutes:minute:minutes:minutes:minutes:minutes'));
+	//results.unshift(plural(hours, 'hours:hour:hours:hours:hours:hours'));
+	//results.unshift(plural(days, 'days:day:days:days:days:days'));
 
-	/*Weeks*/
+	/*Weeks
 	const weeks = Math.trunc(days / 7);
 	const weekRemainDays = days % 7;
 	let weekResult = '';
 	if (weeks > 0) weekResult = plural(weeks, 'weeks:week:weeks:weeks:weeks:weeks');
 	if (weeks > 0 && weekRemainDays > 0) weekResult += ` ${plural(weekRemainDays, 'days:day:days:days:days:days')}`;
 
-	if (weekResult.length) results.unshift(weekResult);
+	if (weekResult.length) results.unshift(weekResult);*/
 
-	/*Months*/
+	/*Months
 	let monthsResult = '';
 	let months = 24 * diff.y + diff.m;
 	if (months > 0) monthsResult = plural(months, 'months:month:months:months:months:months');
 	if (months > 0 && diff.d > 0) monthsResult += ` ${plural(diff.d, 'days:day:days:days:days:days')}`;
 
-	if (monthsResult.length) results.unshift(monthsResult);
+	if (monthsResult.length) results.unshift(monthsResult);*/
 
 	/*Years*/
 	let yearsResult = '';
